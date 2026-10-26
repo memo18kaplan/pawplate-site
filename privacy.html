@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · PawPlate</title>
+  <meta name="description" content="PawPlate keeps your data on your phone. There are no ads and no tracking. Crash reports and anonymous usage counts help us fix and improve the app, and you can switch both off. Unless you turn on the optional cloud backup, we never see your pet&#39;s journal." />
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+ .policy { max-width: 680px; } .policy h2 { font-size: 18px; margin: 28px 0 6px; } .policy p { color: var(--muted); margin: 0; }</style>
+</head>
+<body>
+  <div class="wrap policy">
+    <nav class="nav">
+      <a class="brand" href="./index.html">🐾 PawPlate</a>
+      <a class="lang-switch" href="./tr/gizlilik.html">Türkçe 🇹🇷</a>
+    </nav>
+    <h1>Privacy Policy</h1>
+    <p class="lead">Last updated: October 25, 2026 (crash reports and anonymous usage counts)</p>
+    <h2>The short version</h2>
+    <p>PawPlate keeps your data on your phone. There are no ads and no tracking. Crash reports and anonymous usage counts help us fix and improve the app, and you can switch both off. Unless you turn on the optional cloud backup, we never see your pet&#39;s journal.</p>
+    <h2>What the app stores</h2>
+    <p>Pet profiles, daily check-ins (itch score, stool, body areas, signs, notes), food trials, medications, vet visits, weights, care items, reminders and the photos and short videos you attach. All of it is saved in a local database and folder on your device.</p>
+    <h2>Camera, microphone and photos</h2>
+    <p>The camera and photo library are used only when you choose to attach a picture or a short video, or scan a food barcode. The microphone is used only while you record a video, for its sound. Photos and videos are copied into the app&#39;s private storage and never uploaded; they leave your phone only if you share one yourself, for example with your vet. The barcode scanner reads the code on the device and records no images.</p>
+    <h2>Food barcode lookups</h2>
+    <p>When you scan a pet food barcode, only the barcode number is sent to Open Pet Food Facts (openpetfoodfacts.org, an open database run by the non-profit Open Food Facts) to find the product&#39;s ingredients. Nothing about you or your pet is sent. Products and ingredients you type in yourself stay on your device.</p>
+    <h2>Notifications</h2>
+    <p>Reminders are scheduled locally on your device. PawPlate does not use push notifications or a server.</p>
+    <h2>Weather and pollen (optional)</h2>
+    <p>If you turn on weather and pollen in Profile, PawPlate asks for your location while you use the app, rounds it to about 11 km on the phone and sends only those rounded coordinates to Open-Meteo to get daily weather and pollen. The results are saved on your phone to compare with itch. Your location is not stored on any PawPlate server and is never used for advertising.</p>
+    <h2>Cloud backup (optional)</h2>
+    <p>If you turn on cloud backup in Profile, a copy of your journal (pets, check-ins, events, plans, medicines, vet visits and weights, without photos or videos) is stored on servers run by Supabase, our database provider, under an anonymous account tied to your phone. If you choose Sign in with Apple, the account is tied to your Apple ID instead so you can restore the backup on another iPhone; Apple only shares a random identifier with us, not your name or email. No name, email or phone number is collected. The backup is used only to restore your journal and is never sold, shared or used for advertising. Turn it off any time; Profile → Delete cloud backup, or Delete all data, deletes the copy and the account from the server and disconnects Sign in with Apple.</p>
+    <h2>Subscriptions</h2>
+    <p>PawPlate Pro is sold through Apple. Apple handles the payment; we never see your card or Apple ID. To check whether your subscription is active, restore it and count subscriptions, the app shares your purchase history (which plan, when it started, renewals) with RevenueCat, our subscription provider, under an anonymous ID created on your phone. No name, email or phone number is sent, and it is never used for advertising. Manage or cancel the subscription in your iPhone&#39;s Settings → Apple ID → Subscriptions.</p>
+    <h2>Crash reports and usage counts</h2>
+    <p>When the app crashes, a crash report (the error, the screen it happened on, the app and iOS version and the phone model) is sent to Sentry so we can fix it. To see which features are used, the app also sends anonymous counts of a few actions, such as finishing setup, saving a check-in or creating a report, to Aptabase, an EU-hosted privacy-focused analytics service. Neither includes your pets&#39; names, notes, scores, photos or location, or any ID that could identify you or follow you across apps, and neither is used for advertising. Profile → Help improve PawPlate turns either off.</p>
+    <h2>Sharing and export</h2>
+    <p>When you share a progress card, a vet report or a data export, the system share sheet sends it only where you choose. Nothing leaves the app without that step.</p>
+    <h2>Backups</h2>
+    <p>If you use iCloud or device backups, your operating system may include the app&#39;s data in them under Apple&#39;s or Google&#39;s terms.</p>
+    <h2>Deleting your data</h2>
+    <p>Profile → Delete all data erases every record, photo and video. Deleting the app removes everything as well.</p>
+    <h2>Children</h2>
+    <p>PawPlate is not directed at children under 13 and collects no personal information from anyone.</p>
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+    <h2>Questions?</h2>
+    <p><a href="mailto:hello@pawplate.app">hello@pawplate.app</a></p>
+  </div>
+</body>
+</html>

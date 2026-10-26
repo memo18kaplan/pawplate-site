@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Köpeğim veya Kedim Bunu Yiyebilir mi? — 96 Kaynaklı Yiyecek | PawPlate</title>
+  <meta name="description" content="ASPCA, AKC, Cornell ve VCA rehberlerinden derlenmiş 96 yiyeceğin kedi ve köpekler için güvenlik durumu ve doğru porsiyon bilgileri." />
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="./index.html">🐾 PawPlate</a>
+      <a class="lang-switch" href="../index.html">English 🇬🇧</a>
+    </nav>
+
+    <h1>Bunu yiyebilir mi?</h1>
+    <p class="lead">ASPCA, AKC, Cornell ve VCA rehberlerinden derlenmiş 96 yiyeceğin kedi ve köpekler için güvenlik durumu ve doğru porsiyon bilgileri.</p>
+
+    <div class="controls">
+      <input id="q" class="search" type="search" placeholder="🔍 Yiyecek ara (ör. çikolata, tavuk, üzüm)..." />
+      <div class="chips" id="filters">
+        <button class="chip active" data-status="all">Tümü (96)</button>
+        <button class="chip" data-status="safe">Güvenli</button>
+        <button class="chip" data-status="caution">Dikkat</button>
+        <button class="chip" data-status="toxic">Zehirli</button>
+      </div>
+    </div>
+
+    <div class="grid" id="grid">
+      <a class="card" href="./yiyecekler/hot-peppers.html" data-search="spicy peppers (jalapeño, chili) jalapeno chili chilli hot sauce spicy food acı biber (jalapeño, şili, pul biber) acı biber sivri biber isot pul biber acı sos" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌶</div>
+        <div class="card-title">Acı biber (jalapeño, şili, pul biber)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/raspberries.html" data-search="raspberries raspberry ahududu ahududu" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍓</div>
+        <div class="card-title">Ahududu</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/alcohol.html" data-search="alcohol beer wine liquor spirits alkol bira şarap rakı içki" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍷</div>
+        <div class="card-title">Alkol</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pineapple.html" data-search="pineapple ananas ananas" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍍</div>
+        <div class="card-title">Ananas</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pistachios.html" data-search="pistachios pistachio antep fıstığı antep fıstığı şam fıstığı fıstık" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Antep fıstığı</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pear.html" data-search="pears pear armut armut" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍐</div>
+        <div class="card-title">Armut</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/avocado.html" data-search="avocado guacamole avokado guacamole" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥑</div>
+        <div class="card-title">Avokado</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/almonds.html" data-search="almonds almond badem badem" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Badem</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/honey.html" data-search="honey bal bal" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍯</div>
+        <div class="card-title">Bal</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pumpkin.html" data-search="pumpkin (plain) pumpkin puree squash bal kabağı (sade) bal kabağı püresi kabak" data-dog="safe" data-cat="safe">
+        <div class="emoji">🎃</div>
+        <div class="card-title">Bal kabağı (sade)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/fish.html" data-search="fish (cooked) white fish cod sardines balık (pişmiş) beyaz balık morina sardalya" data-dog="caution" data-cat="safe">
+        <div class="emoji">🐟</div>
+        <div class="card-title">Balık (pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pumpkin-pie.html" data-search="pumpkin pie and pumpkin-spice treats pumpkin spice pumpkin latte pie filling balkabağı tatlısı ve baharatlı kabak ürünleri kabak tatlısı balkabağı turtası pumpkin spice" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥧</div>
+        <div class="card-title">Balkabağı tatlısı ve baharatlı kabak ürünleri</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/peas.html" data-search="peas green peas snow peas sugar snap peas bezelye bezelye" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🫛</div>
+        <div class="card-title">Bezelye</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/blackberries.html" data-search="blackberries blackberry böğürtlen böğürtlen" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🫐</div>
+        <div class="card-title">Böğürtlen</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/broccoli.html" data-search="broccoli brokoli brokoli" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥦</div>
+        <div class="card-title">Brokoli</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/brussels-sprouts.html" data-search="brussels sprouts sprouts brüksel lahanası brüksel lahanası" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Brüksel lahanası</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/walnuts-pecans.html" data-search="walnuts and pecans walnut pecan ceviz ve pekan cevizi ceviz pekan" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Ceviz ve pekan cevizi</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/yeast-dough.html" data-search="raw yeast dough bread dough pizza dough raw dough çiğ mayalı hamur ekmek hamuru pizza hamuru çiğ hamur" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🥖</div>
+        <div class="card-title">Çiğ mayalı hamur</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/raw-meat.html" data-search="raw or undercooked meat raw chicken raw beef raw diet çiğ ya da az pişmiş et çiğ tavuk çiğ et çiğ beslenme" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥩</div>
+        <div class="card-title">Çiğ ya da az pişmiş et</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/raw-eggs.html" data-search="raw eggs raw egg çiğ yumurta çiğ yumurta" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥚</div>
+        <div class="card-title">Çiğ yumurta</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/chocolate.html" data-search="chocolate cocoa cacao brownie çikolata kakao kek brownie" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍫</div>
+        <div class="card-title">Çikolata</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/strawberries.html" data-search="strawberries strawberry çilek çilek" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍓</div>
+        <div class="card-title">Çilek</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/beef-cooked.html" data-search="beef (plain cooked) steak ground beef hamburger dana eti (sade pişmiş) dana eti sığır eti kıyma biftek köfte" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥩</div>
+        <div class="card-title">Dana eti (sade pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/bell-pepper.html" data-search="bell peppers bell pepper sweet pepper capsicum dolmalık biber ve kapya biber dolmalık biber kapya biber tatlı biber renkli biber biber" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🫑</div>
+        <div class="card-title">Dolmalık biber ve kapya biber</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/tomato.html" data-search="tomatoes tomato domates domates" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍅</div>
+        <div class="card-title">Domates</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pork.html" data-search="pork (plain cooked) domuz eti (sade pişmiş) domuz" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍖</div>
+        <div class="card-title">Domuz eti (sade pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/ice-cream.html" data-search="ice cream gelato frozen yogurt dondurma dondurma frozen yoğurt" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍦</div>
+        <div class="card-title">Dondurma</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/bread.html" data-search="bread (plain) toast white bread ekmek (sade) tost beyaz ekmek" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🍞</div>
+        <div class="card-title">Ekmek (sade)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/apple.html" data-search="apples apple elma elma" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍎</div>
+        <div class="card-title">Elma</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/peanut-butter.html" data-search="peanut butter fıstık ezmesi fıstık ezmesi" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Fıstık ezmesi</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/chives.html" data-search="chives chive frenk soğanı frenk soğanı" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Frenk soğanı</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/carrots.html" data-search="carrots carrot havuç havuç" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥕</div>
+        <div class="card-title">Havuç</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/turkey.html" data-search="turkey (plain cooked) hindi (sade pişmiş) hindi" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍗</div>
+        <div class="card-title">Hindi (sade pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/coconut.html" data-search="coconut and coconut oil coconut milk coconut oil hindistan cevizi ve yağı hindistan cevizi sütü hindistan cevizi yağı" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥥</div>
+        <div class="card-title">Hindistan cevizi ve yağı</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/spinach.html" data-search="spinach ispanak ıspanak" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Ispanak</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/stuffing-gravy.html" data-search="stuffing and gravy stuffing gravy thanksgiving leftovers turkey skin i̇ç pilav, et suyu sosu (gravy) ve hindi derisi iç pilav gravy et sosu hindi derisi" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥘</div>
+        <div class="card-title">İç pilav, et suyu sosu (gravy) ve hindi derisi</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/ham.html" data-search="ham gammon cured ham jambon jambon" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥓</div>
+        <div class="card-title">Jambon</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/zucchini.html" data-search="zucchini courgette kabak (yeşil kabak) kabak yeşil kabak sakız kabağı" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥒</div>
+        <div class="card-title">Kabak (yeşil kabak)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/caffeine.html" data-search="caffeine (tea, soda, energy drinks, caffeine pills) energy drink caffeine pills pre-workout tea green tea black tea soda cola kafein (çay, gazlı içecek, enerji içecekleri, kafein hapları) enerji içeceği kafein hapı çay kola" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">⚡</div>
+        <div class="card-title">Kafein (çay, gazlı içecek, enerji içecekleri, kafein hapları)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/coffee.html" data-search="coffee espresso coffee grounds coffee beans kahve espresso kahve telvesi kahve çekirdeği" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">☕</div>
+        <div class="card-title">Kahve</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cashews.html" data-search="cashews cashew kaju kaju" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Kaju</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/shrimp.html" data-search="shrimp (cooked) prawns karides (pişmiş) karides" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍤</div>
+        <div class="card-title">Karides (pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cauliflower.html" data-search="cauliflower karnabahar karnabahar" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥦</div>
+        <div class="card-title">Karnabahar</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/watermelon.html" data-search="watermelon karpuz karpuz" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍉</div>
+        <div class="card-title">Karpuz</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cantaloupe.html" data-search="cantaloupe melon rockmelon kavun kavun" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍈</div>
+        <div class="card-title">Kavun</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/bones.html" data-search="bones raw bones chicken bones cooked bones kemik çiğ kemik tavuk kemiği pişmiş kemik" data-dog="caution" data-cat="caution">
+        <div class="emoji">🦴</div>
+        <div class="card-title">Kemik</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/thc-edibles.html" data-search="cannabis edibles (thc) marijuana weed edibles thc gummies pot brownies kenevir / thc içeren yenilebilir ürünler kenevir esrar thc" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍃</div>
+        <div class="card-title">Kenevir / THC içeren yenilebilir ürünler</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/celery.html" data-search="celery kereviz sapı kereviz sap kereviz" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Kereviz sapı</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/ketchup.html" data-search="ketchup tomato ketchup ketçap ketçap domates sosu" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥫</div>
+        <div class="card-title">Ketçap</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/squash.html" data-search="squash (butternut, acorn) butternut squash acorn squash winter squash kış kabağı (bal kabağı türleri) kış kabağı butternut kabağı kestane kabağı" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🎃</div>
+        <div class="card-title">Kış kabağı (bal kabağı türleri)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/quinoa.html" data-search="quinoa kinoa kinoa" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍚</div>
+        <div class="card-title">Kinoa</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cherries.html" data-search="cherries cherry kiraz vişne" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍒</div>
+        <div class="card-title">Kiraz</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/kiwi.html" data-search="kiwi kiwifruit kivi kivi" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥝</div>
+        <div class="card-title">Kivi</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/xylitol.html" data-search="xylitol (sugar-free gum, candy, some peanut butters) sugar free gum birch sugar sweetener ksilitol (şekersiz sakız, şeker, bazı fıstık ezmeleri) şekersiz sakız huş şekeri tatlandırıcı xylitol" data-dog="toxic" data-cat="caution">
+        <div class="emoji">🍬</div>
+        <div class="card-title">Ksilitol (şekersiz sakız, şeker, bazı fıstık ezmeleri)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cookies-sweets.html" data-search="cookies, cake and sweets cookies cake candy pie donut dessert kurabiye, pasta ve tatlılar kurabiye pasta kek şekerleme tatlı çörek baklava" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍪</div>
+        <div class="card-title">Kurabiye, pasta ve tatlılar</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/raisins.html" data-search="raisins sultanas currants raisin bread trail mix kuru üzüm kuru üzüm kuş üzümü üzümlü kek" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍇</div>
+        <div class="card-title">Kuru üzüm</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/macadamia.html" data-search="macadamia nuts macadamia makadamya fıstığı makadamya" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Makadamya fıstığı</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pasta.html" data-search="pasta (plain) noodles spaghetti macaroni makarna (sade) makarna erişte spagetti şehriye" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍝</div>
+        <div class="card-title">Makarna (sade)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/mango.html" data-search="mango mango mango" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🥭</div>
+        <div class="card-title">Mango</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/corn.html" data-search="corn (off the cob) sweetcorn maize mısır (koçandan ayrılmış) mısır" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🌽</div>
+        <div class="card-title">Mısır (koçandan ayrılmış)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/nutmeg.html" data-search="nutmeg nutmeg eggnog muskat cevizi muskat küçük hindistan cevizi" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Muskat cevizi</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/banana.html" data-search="bananas banana muz muz" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍌</div>
+        <div class="card-title">Muz</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/bacon.html" data-search="bacon bacon bits pastırma ve bacon bacon pastırma füme et" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥓</div>
+        <div class="card-title">Pastırma ve bacon</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/potato.html" data-search="potatoes potato mashed potatoes french fries hash browns patates patates patates püresi patates kızartması haşlanmış patates" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🥔</div>
+        <div class="card-title">Patates</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/popcorn.html" data-search="popcorn (plain) patlamış mısır (sade) patlamış mısır" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍿</div>
+        <div class="card-title">Patlamış mısır (sade)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cheese.html" data-search="cheese cheddar mozzarella cottage cheese peynir kaşar mozzarella lor beyaz peynir" data-dog="caution" data-cat="caution">
+        <div class="emoji">🧀</div>
+        <div class="card-title">Peynir</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/leeks.html" data-search="leeks leek pırasa pırasa" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Pırasa</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/rice.html" data-search="rice (plain cooked) white rice brown rice pirinç (sade pişmiş) pilav beyaz pirinç esmer pirinç haşlanmış pirinç" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍚</div>
+        <div class="card-title">Pirinç (sade pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/pizza.html" data-search="pizza pizza crust pizza pizza pizza kenarı" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍕</div>
+        <div class="card-title">Pizza</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/orange.html" data-search="oranges and other citrus orange clementine mandarin lemon lime grapefruit portakal ve diğer turunçgiller portakal mandalina limon misket limonu greyfurt" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍊</div>
+        <div class="card-title">Portakal ve diğer turunçgiller</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/rhubarb.html" data-search="rhubarb rhubarb pie ravent (ışgın) ravent ışgın" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Ravent (ışgın)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/yogurt.html" data-search="plain yogurt yoghurt greek yogurt sade yoğurt yoğurt süzme yoğurt" data-dog="safe" data-cat="caution">
+        <div class="emoji">🥣</div>
+        <div class="card-title">Sade yoğurt</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cucumber.html" data-search="cucumber cucumbers salatalık salatalık hıyar" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥒</div>
+        <div class="card-title">Salatalık</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/garlic.html" data-search="garlic garlic powder garlic bread sarımsak sarımsak tozu sarımsaklı ekmek" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧄</div>
+        <div class="card-title">Sarımsak</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/onion.html" data-search="onion onions onion powder shallot soğan soğan tozu arpacık soğan yeşil soğan" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧅</div>
+        <div class="card-title">Soğan</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/salmon.html" data-search="salmon (cooked) somon (pişmiş) somon" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍣</div>
+        <div class="card-title">Somon (pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/hot-dogs.html" data-search="hot dogs hot dog sausage frankfurter sosis ve sosisli sandviç sosis sosisli hot dog" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌭</div>
+        <div class="card-title">Sosis ve sosisli sandviç</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/milk.html" data-search="milk cow milk dairy süt inek sütü süt ürünleri" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥛</div>
+        <div class="card-title">Süt</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/deli-meat.html" data-search="deli meat lunch meat salami pepperoni cold cuts şarküteri etleri (salam, sucuk, füme et) salam sucuk jambon füme hindi şarküteri" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥪</div>
+        <div class="card-title">Şarküteri etleri (salam, sucuk, füme et)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/peaches.html" data-search="peaches peach nectarine şeftali nektarin" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍑</div>
+        <div class="card-title">Şeftali</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/hops.html" data-search="hops (beer brewing) hops home brewing spent hops şerbetçiotu (evde bira yapımı) şerbetçiotu" data-dog="toxic" data-cat="unknown">
+        <div class="emoji">🍺</div>
+        <div class="card-title">Şerbetçiotu (evde bira yapımı)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cinnamon.html" data-search="cinnamon tarçın tarçın" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍂</div>
+        <div class="card-title">Tarçın</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/sweet-potato.html" data-search="sweet potato yam sweet potatoes tatlı patates tatlı patates yer elması" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍠</div>
+        <div class="card-title">Tatlı patates</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/chicken-cooked.html" data-search="chicken (plain cooked) chicken breast boiled chicken tavuk (sade pişmiş) tavuk tavuk göğsü haşlanmış tavuk" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍗</div>
+        <div class="card-title">Tavuk (sade pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/green-beans.html" data-search="green beans string beans taze fasulye fasulye yeşil fasulye" data-dog="safe" data-cat="safe">
+        <div class="emoji">🫛</div>
+        <div class="card-title">Taze fasulye</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/butter.html" data-search="butter margarine tereyağı tereyağı margarin" data-dog="caution" data-cat="caution">
+        <div class="emoji">🧈</div>
+        <div class="card-title">Tereyağı</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/tuna.html" data-search="tuna canned tuna ton balığı konserve ton balığı" data-dog="caution" data-cat="caution">
+        <div class="emoji">🐟</div>
+        <div class="card-title">Ton balığı</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-caution">🐱 Dikkat</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/cranberries.html" data-search="cranberries cranberry turna yemişi kızılcık cranberry" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍒</div>
+        <div class="card-title">Turna yemişi</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/salt.html" data-search="salt and very salty snacks chips pretzels salty food crisps tuz ve çok tuzlu atıştırmalıklar cips kraker tuzlu yiyecek" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧂</div>
+        <div class="card-title">Tuz ve çok tuzlu atıştırmalıklar</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/grapes.html" data-search="grapes grape üzüm üzüm" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍇</div>
+        <div class="card-title">Üzüm</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/blueberries.html" data-search="blueberries blueberry yaban mersini yaban mersini blueberry" data-dog="safe" data-cat="safe">
+        <div class="emoji">🫐</div>
+        <div class="card-title">Yaban mersini</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/wild-mushrooms.html" data-search="wild mushrooms mushroom toadstool yabani mantar mantar" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍄</div>
+        <div class="card-title">Yabani mantar</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Zehirli</span>
+          <span class="badge badge-toxic">🐱 Zehirli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/peanuts.html" data-search="peanuts (plain) peanut yer fıstığı (sade) fıstık yer fıstığı" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Yer fıstığı (sade)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/oatmeal.html" data-search="oatmeal (plain) oats porridge yulaf ezmesi (sade) yulaf yulaf lapası" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🥣</div>
+        <div class="card-title">Yulaf ezmesi (sade)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/eggs-cooked.html" data-search="eggs (cooked) scrambled egg boiled egg yumurta (pişmiş) haşlanmış yumurta çırpılmış yumurta" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍳</div>
+        <div class="card-title">Yumurta (pişmiş)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Güvenli</span>
+          <span class="badge badge-safe">🐱 Güvenli</span>
+        </div>
+      </a>
+<a class="card" href="./yiyecekler/olives.html" data-search="olives olive zeytin zeytin siyah zeytin yeşil zeytin" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🫒</div>
+        <div class="card-title">Zeytin</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Dikkat</span>
+          <span class="badge badge-unknown">🐱 İncelenmedi</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="disclaimer">ⓘ Bilgilendirme amaçlıdır, veteriner tavsiyesi değildir.</div>
+  </div>
+  <script>
+    const q = document.getElementById('q');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const buttons = Array.from(document.querySelectorAll('#filters .chip'));
+    let activeStatus = 'all';
+    function apply() {
+      const term = q.value.trim().toLowerCase();
+      for (const c of cards) {
+        const matchText = !term || c.dataset.search.includes(term);
+        const matchStatus = activeStatus === 'all' || c.dataset.dog === activeStatus || c.dataset.cat === activeStatus;
+        c.style.display = matchText && matchStatus ? '' : 'none';
+      }
+    }
+    q.addEventListener('input', apply);
+    for (const b of buttons) {
+      b.addEventListener('click', () => {
+        buttons.forEach((x) => x.classList.remove('active'));
+        b.classList.add('active');
+        activeStatus = b.dataset.status;
+        apply();
+      });
+    }
+  </script>
+</body>
+</html>

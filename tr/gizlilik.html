@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gizlilik Politikası · PawPlate</title>
+  <meta name="description" content="PawPlate verilerinizi telefonunuzda tutar. Reklam ve izleme yoktur. Çökme raporları ve anonim kullanım sayıları uygulamayı düzeltmemize ve geliştirmemize yardım eder; ikisini de kapatabilirsiniz. İsteğe bağlı bulut yedeğini açmadığınız sürece evcil hayvanınızın günlüğünü biz hiç görmeyiz." />
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+ .policy { max-width: 680px; } .policy h2 { font-size: 18px; margin: 28px 0 6px; } .policy p { color: var(--muted); margin: 0; }</style>
+</head>
+<body>
+  <div class="wrap policy">
+    <nav class="nav">
+      <a class="brand" href="../index.html">🐾 PawPlate</a>
+      <a class="lang-switch" href="../privacy.html">English 🇬🇧</a>
+    </nav>
+    <h1>Gizlilik Politikası</h1>
+    <p class="lead">Son güncelleme: 25 Ekim 2026 (çökme raporları ve anonim kullanım sayıları)</p>
+    <h2>Kısaca</h2>
+    <p>PawPlate verilerinizi telefonunuzda tutar. Reklam ve izleme yoktur. Çökme raporları ve anonim kullanım sayıları uygulamayı düzeltmemize ve geliştirmemize yardım eder; ikisini de kapatabilirsiniz. İsteğe bağlı bulut yedeğini açmadığınız sürece evcil hayvanınızın günlüğünü biz hiç görmeyiz.</p>
+    <h2>Uygulamanın sakladıkları</h2>
+    <p>Evcil hayvan profilleri, günlük kayıtlar (kaşıntı puanı, dışkı, vücut bölgeleri, belirtiler, notlar), yiyecek denemeleri, ilaçlar, veteriner ziyaretleri, kilolar, bakım öğeleri, hatırlatıcılar ve eklediğiniz fotoğraflar. Hepsi cihazınızdaki yerel bir veritabanında ve klasörde durur.</p>
+    <h2>Kamera, mikrofon ve fotoğraflar</h2>
+    <p>Kamera ve fotoğraf arşivi yalnızca siz fotoğraf ya da kısa video eklemek veya mama barkodu okutmak istediğinizde kullanılır. Mikrofon yalnızca video çekerken, videonun sesi için kullanılır. Fotoğraflar ve videolar uygulamanın özel alanına kopyalanır ve hiçbir yere yüklenmez; yalnızca siz paylaşırsanız (örneğin veterinerinize) telefondan çıkar. Barkod okuyucu kodu cihazda okur, görüntü kaydetmez.</p>
+    <h2>Mama barkodu sorgulama</h2>
+    <p>Bir mama barkodu okuttuğunuzda içerikleri bulmak için yalnızca barkod numarası Open Pet Food Facts&#39;e (openpetfoodfacts.org, kâr amacı gütmeyen Open Food Facts&#39;in açık veritabanı) gönderilir. Sizinle veya evcil hayvanınızla ilgili hiçbir bilgi gönderilmez. Kendi yazdığınız ürün ve içerikler cihazınızda kalır.</p>
+    <h2>Bildirimler</h2>
+    <p>Hatırlatıcılar cihazınızda yerel olarak planlanır. PawPlate anlık bildirim sunucusu kullanmaz.</p>
+    <h2>Hava ve polen (isteğe bağlı)</h2>
+    <p>Profil&#39;de hava ve poleni açarsanız PawPlate uygulamayı kullanırken konumunuzu ister, telefonda yaklaşık 11 km&#39;ye yuvarlar ve yalnızca bu yuvarlanmış koordinatları günlük hava ve polen bilgisi için Open-Meteo&#39;ya gönderir. Sonuçlar kaşıntıyla karşılaştırmak için telefonunuzda saklanır. Konumunuz hiçbir PawPlate sunucusunda saklanmaz ve reklam için kullanılmaz.</p>
+    <h2>Bulut yedeği (isteğe bağlı)</h2>
+    <p>Profil&#39;de bulut yedeğini açarsanız günlüğünüzün bir kopyası (evcil hayvanlar, kayıtlar, olaylar, planlar, ilaçlar, veteriner ziyaretleri ve kilolar; fotoğraflar ve videolar hariç) veritabanı sağlayıcımız Supabase&#39;in sunucularında, telefonunuza bağlı anonim bir hesapla saklanır. Apple ile giriş yapmayı seçerseniz hesap, yedeği başka bir iPhone&#39;da geri yükleyebilmeniz için Apple kimliğinize bağlanır; Apple bizimle adınızı ya da e-postanızı değil, yalnızca rastgele bir kimlik paylaşır. Ad, e-posta veya telefon numarası toplanmaz. Yedek yalnızca günlüğünüzü geri yüklemek için kullanılır; satılmaz, paylaşılmaz, reklam için kullanılmaz. İstediğiniz an kapatabilirsiniz; Profil → Buluttaki yedeği sil ya da Tüm verileri sil, sunucudaki kopyayı ve hesabı siler, Apple ile giriş bağlantısını kaldırır.</p>
+    <h2>Abonelikler</h2>
+    <p>PawPlate Pro, Apple üzerinden satılır. Ödemeyi Apple alır; kartınızı ya da Apple kimliğinizi hiçbir zaman görmeyiz. Aboneliğinizin aktif olup olmadığını kontrol etmek, geri yüklemek ve abonelikleri saymak için uygulama satın alma geçmişinizi (hangi plan, ne zaman başladı, yenilemeler) telefonunuzda oluşturulan anonim bir kimlikle abonelik sağlayıcımız RevenueCat ile paylaşır. Ad, e-posta veya telefon numarası gönderilmez; reklam için kullanılmaz. Aboneliği iPhone&#39;unuzun Ayarlar → Apple Kimliği → Abonelikler bölümünden yönetebilir ya da iptal edebilirsiniz.</p>
+    <h2>Çökme raporları ve kullanım sayıları</h2>
+    <p>Uygulama çökerse, düzeltebilmemiz için Sentry&#39;ye bir çökme raporu (hata, olduğu ekran, uygulama ve iOS sürümü, telefon modeli) gönderilir. Hangi özelliklerin kullanıldığını görmek için uygulama birkaç işlemin (kurulumu bitirmek, kayıt kaydetmek, rapor oluşturmak gibi) anonim sayılarını AB&#39;de barındırılan, gizlilik odaklı Aptabase&#39;e de gönderir. İkisinde de dostunuzun adı, notlarınız, puanlar, fotoğraflar, konum ya da sizi tanıtabilecek veya uygulamalar arasında izleyebilecek bir kimlik yoktur; reklam için kullanılmazlar. Profil → PawPlate&#39;i geliştirmeye yardım edin bölümünden ikisini de kapatabilirsiniz.</p>
+    <h2>Paylaşma ve dışa aktarma</h2>
+    <p>İlerleme kartı, veteriner raporu veya veri dışa aktarımı paylaştığınızda sistem paylaşım ekranı yalnızca sizin seçtiğiniz yere gönderir. Bu adım olmadan uygulamadan hiçbir şey çıkmaz.</p>
+    <h2>Yedekler</h2>
+    <p>iCloud veya cihaz yedeği kullanıyorsanız işletim sisteminiz uygulama verilerini Apple&#39;ın veya Google&#39;ın koşullarıyla yedeğe dahil edebilir.</p>
+    <h2>Verilerinizi silmek</h2>
+    <p>Profil → Tüm verileri sil her kaydı, fotoğrafı ve videoyu siler. Uygulamayı silmek de her şeyi kaldırır.</p>
+    <h2>Çocuklar</h2>
+    <p>PawPlate 13 yaş altı çocuklara yönelik değildir ve kimseden kişisel bilgi toplamaz.</p>
+    <h2>Değişiklikler</h2>
+    <p>Bu politika değişirse yeni sürüm bu sayfada yeni tarihle yayımlanır.</p>
+    <h2>Sorularınız mı var?</h2>
+    <p><a href="mailto:hello@pawplate.app">hello@pawplate.app</a></p>
+  </div>
+</body>
+</html>
