@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Informativa sulla privacy · PawPlate</title>
+  <meta name="description" content="PawPlate conserva i tuoi dati sul tuo telefono. Niente pubblicità e nessun tracciamento. I report sugli arresti anomali e i conteggi di utilizzo anonimi ci aiutano a correggere e migliorare l’app, e puoi disattivarli entrambi. Per impostazione predefinita il diario del tuo animale viene salvato ogni giorno nel cloud, così non va perso se il telefono si perde o cambia; se disattivi il backup, non vediamo mai il diario." />
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+ .policy { max-width: 680px; } .policy h2 { font-size: 18px; margin: 28px 0 6px; } .policy p { color: var(--muted); margin: 0; }</style>
+</head>
+<body>
+  <div class="wrap policy">
+    <nav class="nav">
+      <a class="brand" href="../index.html">🐾 PawPlate</a>
+      <a class="lang-switch" href="../privacy.html">English 🇬🇧</a>
+    </nav>
+    <h1>Informativa sulla privacy</h1>
+    <p class="lead">Ultimo aggiornamento: 2 novembre 2026 (il backup nel cloud ora è attivo per impostazione predefinita e si può disattivare)</p>
+    <h2>In breve</h2>
+    <p>PawPlate conserva i tuoi dati sul tuo telefono. Niente pubblicità e nessun tracciamento. I report sugli arresti anomali e i conteggi di utilizzo anonimi ci aiutano a correggere e migliorare l’app, e puoi disattivarli entrambi. Per impostazione predefinita il diario del tuo animale viene salvato ogni giorno nel cloud, così non va perso se il telefono si perde o cambia; se disattivi il backup, non vediamo mai il diario.</p>
+    <h2>Cosa salva l’app</h2>
+    <p>Profili degli animali, check-in quotidiani (punteggio del prurito, feci, zone del corpo, segni, note), prove alimentari, farmaci, visite veterinarie, pesi, cure, promemoria e le foto e i brevi video che alleghi. Tutto viene salvato in un database e in una cartella locali sul tuo dispositivo.</p>
+    <h2>Fotocamera, microfono e foto</h2>
+    <p>La fotocamera e la libreria foto vengono usate solo quando scegli di allegare un’immagine o un breve video, o di scansionare il codice a barre di un cibo. Il microfono viene usato solo mentre registri un video, per il suo audio. Foto e video vengono copiati nello spazio privato dell’app e non vengono mai caricati; lasciano il telefono solo se sei tu a condividerne uno, ad esempio con il veterinario. Lo scanner legge il codice a barre sul dispositivo e non registra immagini.</p>
+    <h2>Ricerca dei codici a barre dei cibi</h2>
+    <p>Quando scansioni il codice a barre di un cibo per animali, solo il numero del codice viene inviato a Open Pet Food Facts (openpetfoodfacts.org, un database aperto gestito dall’organizzazione no profit Open Food Facts) per trovare gli ingredienti del prodotto. Non viene inviato nulla su di te o sul tuo animale. I prodotti e gli ingredienti che inserisci tu restano sul tuo dispositivo.</p>
+    <h2>Notifiche</h2>
+    <p>I promemoria vengono programmati localmente sul tuo dispositivo. PawPlate non usa notifiche push né un server.</p>
+    <h2>Backup nel cloud (attivo per impostazione predefinita)</h2>
+    <p>A meno che tu non lo disattivi in Impostazioni → Backup, una copia del tuo diario (animali, check-in, eventi, piani, farmaci, visite veterinarie e pesi, senza foto né video) viene conservata su server gestiti da Supabase, il nostro fornitore di database, con un account anonimo legato al tuo telefono. Se scegli Accedi con Apple, l’account viene invece legato al tuo ID Apple così puoi ripristinare il backup su un altro iPhone; Apple condivide con noi solo un identificativo casuale, non il tuo nome né la tua email. Non vengono raccolti nome, email o numero di telefono. Il backup viene usato solo per ripristinare il tuo diario e non viene mai venduto, condiviso o usato per la pubblicità. Puoi disattivarlo quando vuoi; Profilo → Elimina backup nel cloud, o Elimina tutti i dati, cancella la copia e l’account dal server e scollega Accedi con Apple.</p>
+    <h2>Abbonamenti</h2>
+    <p>PawPlate Pro è venduto tramite Apple. Il pagamento è gestito da Apple; non vediamo mai la tua carta né il tuo ID Apple. Per verificare se il tuo abbonamento è attivo, ripristinarlo e contare gli abbonamenti, l’app condivide la cronologia degli acquisti (quale piano, quando è iniziato, i rinnovi) con RevenueCat, il nostro fornitore per gli abbonamenti, con un ID anonimo creato sul tuo telefono. Non vengono inviati nome, email o numero di telefono, e non viene mai usata per la pubblicità. Gestisci o disdici l’abbonamento in Impostazioni dell’iPhone → ID Apple → Abbonamenti.</p>
+    <h2>Report sugli arresti anomali e conteggi di utilizzo</h2>
+    <p>Quando l’app si arresta in modo anomalo, un report (l’errore, la schermata in cui è successo, la versione dell’app e di iOS e il modello del telefono) viene inviato a Sentry così possiamo correggerlo. Per sapere quali funzioni vengono usate, l’app invia anche conteggi anonimi di alcune azioni, come completare la configurazione, salvare un check-in o creare un report, ad Aptabase, un servizio di analisi attento alla privacy con sede nell’UE. Nessuno dei due include nomi, note, punteggi, foto o posizione dei tuoi animali, né alcun ID che possa identificarti o seguirti tra le app, e nessuno dei due viene usato per la pubblicità. Profilo → Aiuta a migliorare PawPlate li disattiva.</p>
+    <h2>Condivisione ed esportazione</h2>
+    <p>Quando condividi una scheda dei progressi, un report per il veterinario o un’esportazione dei dati, il foglio di condivisione del sistema la invia solo dove scegli tu. Nulla lascia l’app senza questo passaggio.</p>
+    <h2>Backup del dispositivo</h2>
+    <p>Se usi iCloud o i backup del dispositivo, il sistema operativo può includervi i dati dell’app secondo i termini di Apple o di Google.</p>
+    <h2>Eliminare i tuoi dati</h2>
+    <p>Profilo → Elimina tutti i dati cancella ogni registrazione, foto e video. Anche eliminare l’app rimuove tutto.</p>
+    <h2>Bambini</h2>
+    <p>PawPlate non è rivolta ai bambini sotto i 13 anni e non raccoglie informazioni personali da nessuno.</p>
+    <h2>Modifiche</h2>
+    <p>Se questa informativa cambia, la nuova versione verrà pubblicata su questa pagina con una nuova data.</p>
+    <h2>Domande?</h2>
+    <p><a href="mailto:pawplate.support@gmail.com">pawplate.support@gmail.com</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Политика конфиденциальности · PawPlate</title>
+  <meta name="description" content="PawPlate хранит ваши данные на вашем телефоне. Нет рекламы и нет отслеживания. Отчёты о сбоях и анонимные счётчики использования помогают нам исправлять и улучшать приложение, и то и другое можно выключить. По умолчанию дневник вашего питомца раз в день сохраняется в облаке, чтобы он не пропал при потере или замене телефона; если выключить резервное копирование, мы никогда не видим дневник." />
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+ .policy { max-width: 680px; } .policy h2 { font-size: 18px; margin: 28px 0 6px; } .policy p { color: var(--muted); margin: 0; }</style>
+</head>
+<body>
+  <div class="wrap policy">
+    <nav class="nav">
+      <a class="brand" href="../index.html">🐾 PawPlate</a>
+      <a class="lang-switch" href="../privacy.html">English 🇬🇧</a>
+    </nav>
+    <h1>Политика конфиденциальности</h1>
+    <p class="lead">Последнее обновление: 2 ноября 2026 г. (облачное резервное копирование теперь включено по умолчанию, его можно выключить)</p>
+    <h2>Коротко</h2>
+    <p>PawPlate хранит ваши данные на вашем телефоне. Нет рекламы и нет отслеживания. Отчёты о сбоях и анонимные счётчики использования помогают нам исправлять и улучшать приложение, и то и другое можно выключить. По умолчанию дневник вашего питомца раз в день сохраняется в облаке, чтобы он не пропал при потере или замене телефона; если выключить резервное копирование, мы никогда не видим дневник.</p>
+    <h2>Что хранит приложение</h2>
+    <p>Профили питомцев, ежедневные отметки (оценка зуда, стул, места на теле, признаки, заметки), пробные диеты, лекарства, визиты к ветеринару, вес, пункты ухода, напоминания, а также прикреплённые вами фото и короткие видео. Всё это сохраняется в локальной базе данных и папке на вашем устройстве.</p>
+    <h2>Камера, микрофон и фото</h2>
+    <p>Камера и медиатека используются только тогда, когда вы сами прикрепляете снимок или короткое видео или сканируете штрихкод корма. Микрофон используется только во время записи видео — для звука. Фото и видео копируются в закрытое хранилище приложения и никогда не загружаются; они покидают телефон, только если вы сами ими поделитесь, например с ветеринаром. Сканер штрихкодов считывает код на устройстве и не сохраняет изображений.</p>
+    <h2>Поиск корма по штрихкоду</h2>
+    <p>Когда вы сканируете штрихкод корма, в Open Pet Food Facts (openpetfoodfacts.org — открытая база данных некоммерческой организации Open Food Facts) отправляется только номер штрихкода, чтобы найти состав продукта. Никакие сведения о вас или вашем питомце не отправляются. Продукты и составы, которые вы вводите сами, остаются на вашем устройстве.</p>
+    <h2>Уведомления</h2>
+    <p>Напоминания планируются локально на вашем устройстве. PawPlate не использует push-уведомления или сервер.</p>
+    <h2>Облачная резервная копия (включена по умолчанию)</h2>
+    <p>Если вы не выключите его в Настройках → Резервная копия, копия вашего дневника (питомцы, отметки, события, планы, лекарства, визиты к ветеринару и вес, без фото и видео) хранится на серверах Supabase, нашего поставщика базы данных, в анонимной учётной записи, привязанной к вашему телефону. Если вы выберете «Вход с Apple», учётная запись привязывается к вашему Apple ID, чтобы вы могли восстановить копию на другом iPhone; Apple передаёт нам только случайный идентификатор, а не ваше имя или e-mail. Имя, e-mail и номер телефона не собираются. Копия используется только для восстановления дневника и никогда не продаётся, не передаётся и не используется для рекламы. Отключить её можно в любой момент; Профиль → Удалить облачную копию или Удалить все данные удаляет копию и учётную запись с сервера и отключает «Вход с Apple».</p>
+    <h2>Подписки</h2>
+    <p>PawPlate Pro продаётся через Apple. Оплату обрабатывает Apple; мы никогда не видим вашу карту или Apple ID. Чтобы проверить, активна ли подписка, восстановить её и подсчитывать подписки, приложение передаёт историю покупок (какой тариф, когда он начался, продления) RevenueCat, нашему поставщику подписок, под анонимным идентификатором, созданным на вашем телефоне. Имя, e-mail и номер телефона не отправляются, и эти данные никогда не используются для рекламы. Управлять подпиской или отменить её можно в Настройках iPhone → Apple ID → Подписки.</p>
+    <h2>Отчёты о сбоях и счётчики использования</h2>
+    <p>Когда приложение даёт сбой, отчёт о сбое (ошибка, экран, на котором она произошла, версии приложения и iOS и модель телефона) отправляется в Sentry, чтобы мы могли её исправить. Чтобы понять, какими функциями пользуются, приложение также отправляет анонимные счётчики нескольких действий — например, завершение настройки, сохранение отметки или создание отчёта — в Aptabase, сервис аналитики с упором на конфиденциальность, размещённый в ЕС. Ни то, ни другое не содержит кличек питомцев, заметок, оценок, фото или геопозиции, а также идентификаторов, по которым можно узнать вас или отслеживать вас в разных приложениях, и ни то, ни другое не используется для рекламы. Профиль → Помогите улучшить PawPlate отключает и то и другое.</p>
+    <h2>Отправка и экспорт</h2>
+    <p>Когда вы делитесь карточкой успехов, отчётом для ветеринара или экспортом данных, системное меню «Поделиться» отправляет их только туда, куда вы выберете. Без этого шага ничего не покидает приложение.</p>
+    <h2>Резервные копии</h2>
+    <p>Если вы пользуетесь iCloud или резервными копиями устройства, операционная система может включать в них данные приложения на условиях Apple или Google.</p>
+    <h2>Удаление данных</h2>
+    <p>Профиль → Удалить все данные стирает все записи, фото и видео. Удаление приложения тоже удаляет всё.</p>
+    <h2>Дети</h2>
+    <p>PawPlate не предназначен для детей младше 13 лет и ни у кого не собирает персональные данные.</p>
+    <h2>Изменения</h2>
+    <p>Если эта политика изменится, новая версия будет опубликована на этой странице с новой датой.</p>
+    <h2>Есть вопросы?</h2>
+    <p><a href="mailto:pawplate.support@gmail.com">pawplate.support@gmail.com</a></p>
+  </div>
+</body>
+</html>
