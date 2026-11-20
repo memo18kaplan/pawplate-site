@@ -37,6 +37,18 @@
   .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
   .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
   .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-menu { position: relative; }
+  .lang-menu summary {
+    list-style: none; cursor: pointer; background: var(--surface); border: 1px solid var(--border);
+    padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px;
+  }
+  .lang-menu summary::-webkit-details-marker { display: none; }
+  .lang-list {
+    position: absolute; right: 0; top: calc(100% + 8px); z-index: 10; display: grid; min-width: 160px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 6px;
+  }
+  .lang-list a { color: var(--text); padding: 8px 12px; border-radius: 10px; }
+  .lang-list a:hover { background: var(--surface-alt); text-decoration: none; }
   .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
   h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
   .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
@@ -76,6 +88,30 @@
     background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
     padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
   }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px; }
+  .app-badge img { display: block; }
+  .store-text { display: inline-block; background: #000; color: #fff; border: 1px solid #A6A6A6; border-radius: 10px; padding: 10px 16px; font-weight: 600; font-size: 15px; }
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: -8px 0 28px; }
+  .section-title { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin: 36px 0 14px; }
+  .guide-card .card-title { font-size: 18px; }
+  .article { max-width: 720px; }
+  .article h2 { font-size: 22px; letter-spacing: -0.3px; margin: 34px 0 8px; }
+  .article p, .article li { color: #E6E1DB; font-size: 17px; }
+  .article p { margin: 0 0 12px; }
+  .article ul { padding-left: 22px; margin: 0 0 12px; }
+  .article li { margin-bottom: 6px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 15px; }
+  .article th, .article td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .article th { color: var(--muted); font-weight: 700; }
+  .table-wrap { overflow-x: auto; }
+  .faq h3 { font-size: 17px; margin: 18px 0 4px; }
+  .sources { color: var(--muted); font-size: 14px; }
+  .sources li { color: var(--muted); font-size: 14px; }
+  .footer { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 28px; font-size: 14px; }
+  .footer a { color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 12px; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; display: block; }
+  .facts th { width: 34%; }
   .disclaimer {
     margin-top: 24px; padding: 12px 16px; border-radius: 14px;
     background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;

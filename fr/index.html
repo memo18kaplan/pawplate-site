@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon chien ou mon chat peut-il manger ça ? 145 aliments, plantes et produits ménagers | PawPlate</title>
+  <meta name="description" content="145 aliments, plantes et produits ménagers pour chiens et chats, avec niveau de risque et conseils issus de sources vétérinaires comme l’ASPCA, l’AKC, Cornell et VCA." />
+  <link rel="canonical" href="https://memo18kaplan.github.io/pawplate-site/fr/" />
+  <link rel="alternate" hreflang="en" href="https://memo18kaplan.github.io/pawplate-site/" />
+  <link rel="alternate" hreflang="tr" href="https://memo18kaplan.github.io/pawplate-site/tr/" />
+  <link rel="alternate" hreflang="de" href="https://memo18kaplan.github.io/pawplate-site/de/" />
+  <link rel="alternate" hreflang="es" href="https://memo18kaplan.github.io/pawplate-site/es/" />
+  <link rel="alternate" hreflang="fr" href="https://memo18kaplan.github.io/pawplate-site/fr/" />
+  <link rel="alternate" hreflang="it" href="https://memo18kaplan.github.io/pawplate-site/it/" />
+  <link rel="alternate" hreflang="pt" href="https://memo18kaplan.github.io/pawplate-site/pt/" />
+  <link rel="alternate" hreflang="ru" href="https://memo18kaplan.github.io/pawplate-site/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://memo18kaplan.github.io/pawplate-site/" />
+  <meta property="og:title" content="Mon chien ou mon chat peut-il manger ça ? 145 aliments, plantes et produits ménagers | PawPlate" />
+  <meta property="og:description" content="145 aliments, plantes et produits ménagers pour chiens et chats, avec niveau de risque et conseils issus de sources vétérinaires comme l’ASPCA, l’AKC, Cornell et VCA." />
+  <meta property="og:type" content="website" />
+  <meta name="apple-itunes-app" content="app-id=6827223732" />
+  
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-menu { position: relative; }
+  .lang-menu summary {
+    list-style: none; cursor: pointer; background: var(--surface); border: 1px solid var(--border);
+    padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px;
+  }
+  .lang-menu summary::-webkit-details-marker { display: none; }
+  .lang-list {
+    position: absolute; right: 0; top: calc(100% + 8px); z-index: 10; display: grid; min-width: 160px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 6px;
+  }
+  .lang-list a { color: var(--text); padding: 8px 12px; border-radius: 10px; }
+  .lang-list a:hover { background: var(--surface-alt); text-decoration: none; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px; }
+  .app-badge img { display: block; }
+  .store-text { display: inline-block; background: #000; color: #fff; border: 1px solid #A6A6A6; border-radius: 10px; padding: 10px 16px; font-weight: 600; font-size: 15px; }
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: -8px 0 28px; }
+  .section-title { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin: 36px 0 14px; }
+  .guide-card .card-title { font-size: 18px; }
+  .article { max-width: 720px; }
+  .article h2 { font-size: 22px; letter-spacing: -0.3px; margin: 34px 0 8px; }
+  .article p, .article li { color: #E6E1DB; font-size: 17px; }
+  .article p { margin: 0 0 12px; }
+  .article ul { padding-left: 22px; margin: 0 0 12px; }
+  .article li { margin-bottom: 6px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 15px; }
+  .article th, .article td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .article th { color: var(--muted); font-weight: 700; }
+  .table-wrap { overflow-x: auto; }
+  .faq h3 { font-size: 17px; margin: 18px 0 4px; }
+  .sources { color: var(--muted); font-size: 14px; }
+  .sources li { color: var(--muted); font-size: 14px; }
+  .footer { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 28px; font-size: 14px; }
+  .footer a { color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 12px; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; display: block; }
+  .facts th { width: 34%; }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html">🐾 PawPlate</a>
+      <details class="lang-menu"><summary>🌐 Français</summary><div class="lang-list"><a lang="en" href="../index.html">English</a><a lang="tr" href="../tr/index.html">Türkçe</a><a lang="de" href="../de/index.html">Deutsch</a><a lang="es" href="../es/index.html">Español</a><a lang="it" href="../it/index.html">Italiano</a><a lang="pt" href="../pt/index.html">Português</a><a lang="ru" href="../ru/index.html">Русский</a></div></details>
+    </nav>
+
+    <h1>Peut-il manger ça ?</h1>
+    <p class="lead">145 aliments, plantes et produits ménagers pour chiens et chats, avec niveau de risque et conseils issus de sources vétérinaires comme l’ASPCA, l’AKC, Cornell et VCA.</p>
+    <div class="hero-cta">
+      <a class="app-badge" href="https://apps.apple.com/app/id6827223732?pt=129681263&amp;ct=site-home&amp;mt=8"><img src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83" alt="Télécharger dans l’App Store" width="150" height="50" onerror="this.replaceWith(Object.assign(document.createElement('span'), { className: 'store-text', textContent: this.alt }))" /></a>
+      <span style="color:var(--muted);">Journal des démangeaisons, régime d’éviction et rapport pour le vétérinaire : PawPlate pour iPhone.</span>
+    </div>
+
+    <div class="controls">
+      <input id="q" class="search" type="search" placeholder="🔍 Rechercher (ex. chocolat, poulet, lys)..." />
+      <div class="chips" id="filters">
+        <button class="chip active" data-status="all">Tous (145)</button>
+        <button class="chip" data-status="safe">Sans danger</button>
+        <button class="chip" data-status="caution">Prudence</button>
+        <button class="chip" data-status="toxic">Toxique</button>
+      </div>
+    </div>
+
+    <section class="group">
+      <h2 class="section-title">Aliments <span style="color:var(--muted);font-weight:600;">96</span></h2>
+      <div class="grid">
+      <a class="card" href="aliments/garlic.html" data-search="garlic garlic powder garlic bread ail ail en poudre pain à l’ail" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧄</div>
+        <div class="card-title">Ail</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/alcohol.html" data-search="alcohol beer wine liquor spirits alcool bière vin spiritueux liqueur" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍷</div>
+        <div class="card-title">Alcool</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/almonds.html" data-search="almonds almond amandes amande" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Amandes</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pineapple.html" data-search="pineapple ananas" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍍</div>
+        <div class="card-title">Ananas</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/avocado.html" data-search="avocado guacamole avocat guacamole" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥑</div>
+        <div class="card-title">Avocat</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/bacon.html" data-search="bacon bacon bits bacon lardons poitrine fumée" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥓</div>
+        <div class="card-title">Bacon</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/banana.html" data-search="bananas banana bananes banane" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍌</div>
+        <div class="card-title">Bananes</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/butter.html" data-search="butter margarine beurre margarine" data-dog="caution" data-cat="caution">
+        <div class="emoji">🧈</div>
+        <div class="card-title">Beurre</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/peanut-butter.html" data-search="peanut butter beurre de cacahuète beurre d’arachide pâte d’arachide" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Beurre de cacahuète</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cookies-sweets.html" data-search="cookies, cake and sweets cookies cake candy pie donut dessert biscuits, gâteaux et sucreries biscuits gâteau bonbons sucreries donut dessert tarte" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍪</div>
+        <div class="card-title">Biscuits, gâteaux et sucreries</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/beef-cooked.html" data-search="beef (plain cooked) steak ground beef hamburger bœuf (cuit nature) steak viande hachée steak haché boeuf" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥩</div>
+        <div class="card-title">Bœuf (cuit nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/broccoli.html" data-search="broccoli brocoli" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥦</div>
+        <div class="card-title">Brocoli</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/peanuts.html" data-search="peanuts (plain) peanut cacahuètes (nature) cacahuète arachides" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Cacahuètes (nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/coffee.html" data-search="coffee espresso coffee grounds coffee beans café expresso marc de café grains de café" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">☕</div>
+        <div class="card-title">Café</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/caffeine.html" data-search="caffeine (tea, soda, energy drinks, caffeine pills) energy drink caffeine pills pre-workout tea green tea black tea soda cola caféine (thé, sodas, boissons énergisantes, comprimés) boisson énergisante comprimés de caféine thé thé vert thé noir soda cola" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">⚡</div>
+        <div class="card-title">Caféine (thé, sodas, boissons énergisantes, comprimés)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cranberries.html" data-search="cranberries cranberry canneberges canneberge cranberry" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍒</div>
+        <div class="card-title">Canneberges</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cinnamon.html" data-search="cinnamon cannelle" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍂</div>
+        <div class="card-title">Cannelle</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/carrots.html" data-search="carrots carrot carottes carotte" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥕</div>
+        <div class="card-title">Carottes</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/celery.html" data-search="celery céleri branche céleri" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Céleri branche</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cherries.html" data-search="cherries cherry cerises cerise" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍒</div>
+        <div class="card-title">Cerises</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/wild-mushrooms.html" data-search="wild mushrooms mushroom toadstool champignons sauvages champignon champignon des bois" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍄</div>
+        <div class="card-title">Champignons sauvages</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/deli-meat.html" data-search="deli meat lunch meat salami pepperoni cold cuts charcuterie charcuterie saucisson salami pepperoni viande froide" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥪</div>
+        <div class="card-title">Charcuterie</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/chocolate.html" data-search="chocolate cocoa cacao brownie chocolat cacao brownie gâteau au chocolat" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍫</div>
+        <div class="card-title">Chocolat</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cauliflower.html" data-search="cauliflower chou-fleur" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥦</div>
+        <div class="card-title">Chou-fleur</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/brussels-sprouts.html" data-search="brussels sprouts sprouts choux de bruxelles chou de bruxelles" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Choux de Bruxelles</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/chives.html" data-search="chives chive ciboulette" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Ciboulette</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cucumber.html" data-search="cucumber cucumbers concombre concombres" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥒</div>
+        <div class="card-title">Concombre</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/squash.html" data-search="squash (butternut, acorn) butternut squash acorn squash winter squash courge (butternut, courgeron) courge butternut doubeurre courge d’hiver" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🎃</div>
+        <div class="card-title">Courge (butternut, courgeron)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/zucchini.html" data-search="zucchini courgette courgette courgettes" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥒</div>
+        <div class="card-title">Courgette</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/shrimp.html" data-search="shrimp (cooked) prawns crevettes (cuites) crevette gambas" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍤</div>
+        <div class="card-title">Crevettes (cuites)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/turkey.html" data-search="turkey (plain cooked) dinde (cuite nature) viande de dinde" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍗</div>
+        <div class="card-title">Dinde (cuite nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/spinach.html" data-search="spinach épinards épinard" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Épinards</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/stuffing-gravy.html" data-search="stuffing and gravy stuffing gravy thanksgiving leftovers turkey skin farce et sauce de rôti farce sauce jus de rôti restes de fête peau de dinde" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥘</div>
+        <div class="card-title">Farce et sauce de rôti</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/oatmeal.html" data-search="oatmeal (plain) oats porridge flocons d’avoine (nature) avoine porridge bouillie d’avoine" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🥣</div>
+        <div class="card-title">Flocons d’avoine (nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/strawberries.html" data-search="strawberries strawberry fraises fraise" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍓</div>
+        <div class="card-title">Fraises</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/raspberries.html" data-search="raspberries raspberry framboises framboise" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍓</div>
+        <div class="card-title">Framboises</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cheese.html" data-search="cheese cheddar mozzarella cottage cheese fromage cheddar mozzarella cottage cheese fromage blanc" data-dog="caution" data-cat="caution">
+        <div class="emoji">🧀</div>
+        <div class="card-title">Fromage</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/ice-cream.html" data-search="ice cream gelato frozen yogurt glace crème glacée gelato yaourt glacé" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍦</div>
+        <div class="card-title">Glace</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/green-beans.html" data-search="green beans string beans haricots verts haricot vert" data-dog="safe" data-cat="safe">
+        <div class="emoji">🫛</div>
+        <div class="card-title">Haricots verts</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/hot-dogs.html" data-search="hot dogs hot dog sausage frankfurter hot-dogs et saucisses hot-dog saucisse knacki saucisse de francfort" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌭</div>
+        <div class="card-title">Hot-dogs et saucisses</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/hops.html" data-search="hops (beer brewing) hops home brewing spent hops houblon (brassage de bière) houblon brassage maison drêches de houblon" data-dog="toxic" data-cat="unknown">
+        <div class="emoji">🍺</div>
+        <div class="card-title">Houblon (brassage de bière)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/ham.html" data-search="ham gammon cured ham jambon jambon cuit jambon cru" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥓</div>
+        <div class="card-title">Jambon</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/ketchup.html" data-search="ketchup tomato ketchup ketchup sauce tomate" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥫</div>
+        <div class="card-title">Ketchup</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/kiwi.html" data-search="kiwi kiwifruit kiwi kiwis" data-dog="safe" data-cat="safe">
+        <div class="emoji">🥝</div>
+        <div class="card-title">Kiwi</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/milk.html" data-search="milk cow milk dairy lait lait de vache produits laitiers" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥛</div>
+        <div class="card-title">Lait</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/corn.html" data-search="corn (off the cob) sweetcorn maize maïs (égrené) maïs doux grains de maïs" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🌽</div>
+        <div class="card-title">Maïs (égrené)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/mango.html" data-search="mango mangue" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🥭</div>
+        <div class="card-title">Mangue</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cantaloupe.html" data-search="cantaloupe melon rockmelon melon melon cantaloup cantaloup" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍈</div>
+        <div class="card-title">Melon</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/honey.html" data-search="honey miel" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍯</div>
+        <div class="card-title">Miel</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/blackberries.html" data-search="blackberries blackberry mûres mûre" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🫐</div>
+        <div class="card-title">Mûres</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/blueberries.html" data-search="blueberries blueberry myrtilles myrtille bleuets" data-dog="safe" data-cat="safe">
+        <div class="emoji">🫐</div>
+        <div class="card-title">Myrtilles</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cashews.html" data-search="cashews cashew noix de cajou cajou" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Noix de cajou</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/coconut.html" data-search="coconut and coconut oil coconut milk coconut oil noix de coco et huile de coco lait de coco huile de coco coco" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥥</div>
+        <div class="card-title">Noix de coco et huile de coco</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/macadamia.html" data-search="macadamia nuts macadamia noix de macadamia macadamia" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Noix de macadamia</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/nutmeg.html" data-search="nutmeg nutmeg eggnog noix de muscade muscade lait de poule" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Noix de muscade</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/walnuts-pecans.html" data-search="walnuts and pecans walnut pecan noix et noix de pécan noix noix de pécan pécan" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌰</div>
+        <div class="card-title">Noix et noix de pécan</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/eggs-cooked.html" data-search="eggs (cooked) scrambled egg boiled egg œufs (cuits) œuf brouillé œuf dur oeuf" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍳</div>
+        <div class="card-title">Œufs (cuits)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/raw-eggs.html" data-search="raw eggs raw egg œufs crus œuf cru oeuf cru" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥚</div>
+        <div class="card-title">Œufs crus</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/onion.html" data-search="onion onions onion powder shallot oignon oignons oignon en poudre échalote" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧅</div>
+        <div class="card-title">Oignon</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/olives.html" data-search="olives olive olives olive" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🫒</div>
+        <div class="card-title">Olives</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/orange.html" data-search="oranges and other citrus orange clementine mandarin lemon lime grapefruit oranges et autres agrumes orange clémentine mandarine citron citron vert pamplemousse" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍊</div>
+        <div class="card-title">Oranges et autres agrumes</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/bones.html" data-search="bones raw bones chicken bones cooked bones os os crus os de poulet os cuits" data-dog="caution" data-cat="caution">
+        <div class="emoji">🦴</div>
+        <div class="card-title">Os</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/bread.html" data-search="bread (plain) toast white bread pain (nature) toast pain blanc pain de mie" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🍞</div>
+        <div class="card-title">Pain (nature)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/watermelon.html" data-search="watermelon pastèque melon d’eau" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍉</div>
+        <div class="card-title">Pastèque</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/sweet-potato.html" data-search="sweet potato yam sweet potatoes patate douce patates douces igname" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍠</div>
+        <div class="card-title">Patate douce</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/yeast-dough.html" data-search="raw yeast dough bread dough pizza dough raw dough pâte crue à la levure pâte à pain pâte à pizza pâte crue" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🥖</div>
+        <div class="card-title">Pâte crue à la levure</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pasta.html" data-search="pasta (plain) noodles spaghetti macaroni pâtes (nature) nouilles spaghettis macaronis" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍝</div>
+        <div class="card-title">Pâtes (nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/peaches.html" data-search="peaches peach nectarine pêches pêche nectarine brugnon" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍑</div>
+        <div class="card-title">Pêches</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/peas.html" data-search="peas green peas snow peas sugar snap peas petits pois pois pois gourmands mange-tout" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🫛</div>
+        <div class="card-title">Petits pois</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/hot-peppers.html" data-search="spicy peppers (jalapeño, chili) jalapeno chili chilli hot sauce spicy food piments (jalapeño, chili) jalapeño piment chili sauce piquante plat épicé" data-dog="caution" data-cat="caution">
+        <div class="emoji">🌶</div>
+        <div class="card-title">Piments (jalapeño, chili)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pistachios.html" data-search="pistachios pistachio pistaches pistache" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥜</div>
+        <div class="card-title">Pistaches</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pizza.html" data-search="pizza pizza crust pizza croûte de pizza" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍕</div>
+        <div class="card-title">Pizza</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/leeks.html" data-search="leeks leek poireaux poireau" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🥬</div>
+        <div class="card-title">Poireaux</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pear.html" data-search="pears pear poires poire" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍐</div>
+        <div class="card-title">Poires</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/fish.html" data-search="fish (cooked) white fish cod sardines poisson (cuit) poisson blanc cabillaud sardines" data-dog="caution" data-cat="safe">
+        <div class="emoji">🐟</div>
+        <div class="card-title">Poisson (cuit)</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/bell-pepper.html" data-search="bell peppers bell pepper sweet pepper capsicum poivrons poivron" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🫑</div>
+        <div class="card-title">Poivrons</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/apple.html" data-search="apples apple pommes pomme" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍎</div>
+        <div class="card-title">Pommes</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/potato.html" data-search="potatoes potato mashed potatoes french fries hash browns pommes de terre pomme de terre purée frites galettes de pommes de terre" data-dog="caution" data-cat="unknown">
+        <div class="emoji">🥔</div>
+        <div class="card-title">Pommes de terre</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/popcorn.html" data-search="popcorn (plain) pop-corn (nature) popcorn maïs soufflé" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍿</div>
+        <div class="card-title">Pop-corn (nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pork.html" data-search="pork (plain cooked) porc (cuit nature) viande de porc" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍖</div>
+        <div class="card-title">Porc (cuit nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pumpkin.html" data-search="pumpkin (plain) pumpkin puree squash potiron (nature) purée de potiron citrouille potiron" data-dog="safe" data-cat="safe">
+        <div class="emoji">🎃</div>
+        <div class="card-title">Potiron (nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/chicken-cooked.html" data-search="chicken (plain cooked) chicken breast boiled chicken poulet (cuit nature) blanc de poulet poulet bouilli" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍗</div>
+        <div class="card-title">Poulet (cuit nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/thc-edibles.html" data-search="cannabis edibles (thc) marijuana weed edibles thc gummies pot brownies produits comestibles au cannabis (thc) cannabis marijuana herbe space cake bonbons au thc" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍃</div>
+        <div class="card-title">Produits comestibles au cannabis (THC)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/quinoa.html" data-search="quinoa quinoa" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍚</div>
+        <div class="card-title">Quinoa</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/grapes.html" data-search="grapes grape raisin raisins grain de raisin" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍇</div>
+        <div class="card-title">Raisin</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/raisins.html" data-search="raisins sultanas currants raisin bread trail mix raisins secs raisins de corinthe sultanines pain aux raisins mélange de fruits secs" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍇</div>
+        <div class="card-title">Raisins secs</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/rhubarb.html" data-search="rhubarb rhubarb pie rhubarbe tarte à la rhubarbe" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Rhubarbe</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/rice.html" data-search="rice (plain cooked) white rice brown rice riz (cuit nature) riz blanc riz complet" data-dog="safe" data-cat="unknown">
+        <div class="emoji">🍚</div>
+        <div class="card-title">Riz (cuit nature)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-unknown">🐱 Non vérifié</span>
+        </div>
+      </a>
+<a class="card" href="aliments/salmon.html" data-search="salmon (cooked) saumon (cuit) saumon" data-dog="safe" data-cat="safe">
+        <div class="emoji">🍣</div>
+        <div class="card-title">Saumon (cuit)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/salt.html" data-search="salt and very salty snacks chips pretzels salty food crisps sel et snacks très salés chips bretzels aliments salés biscuits apéritifs" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧂</div>
+        <div class="card-title">Sel et snacks très salés</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pumpkin-pie.html" data-search="pumpkin pie and pumpkin-spice treats pumpkin spice pumpkin latte pie filling tarte au potiron et friandises « pumpkin spice » pumpkin spice latte au potiron garniture de tarte" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥧</div>
+        <div class="card-title">Tarte au potiron et friandises « pumpkin spice »</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/tuna.html" data-search="tuna canned tuna thon thon en boîte" data-dog="caution" data-cat="caution">
+        <div class="emoji">🐟</div>
+        <div class="card-title">Thon</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/tomato.html" data-search="tomatoes tomato tomates tomate" data-dog="caution" data-cat="caution">
+        <div class="emoji">🍅</div>
+        <div class="card-title">Tomates</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/raw-meat.html" data-search="raw or undercooked meat raw chicken raw beef raw diet viande crue ou mal cuite poulet cru bœuf cru alimentation crue barf" data-dog="caution" data-cat="caution">
+        <div class="emoji">🥩</div>
+        <div class="card-title">Viande crue ou mal cuite</div>
+        <div class="badges">
+          <span class="badge badge-caution">🐶 Prudence</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/xylitol.html" data-search="xylitol (sugar-free gum, candy, some peanut butters) sugar free gum birch sugar sweetener xylitol (chewing-gum sans sucre, bonbons, certains beurres de cacahuète) chewing-gum sans sucre sucre de bouleau édulcorant" data-dog="toxic" data-cat="caution">
+        <div class="emoji">🍬</div>
+        <div class="card-title">Xylitol (chewing-gum sans sucre, bonbons, certains beurres de cacahuète)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+<a class="card" href="aliments/yogurt.html" data-search="plain yogurt yoghurt greek yogurt yaourt nature yaourt yaourt grec" data-dog="safe" data-cat="caution">
+        <div class="emoji">🥣</div>
+        <div class="card-title">Yaourt nature</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-caution">🐱 Prudence</span>
+        </div>
+      </a>
+      </div>
+    </section>
+<section class="group">
+      <h2 class="section-title">Plantes et fleurs <span style="color:var(--muted);font-weight:600;">42</span></h2>
+      <div class="grid">
+      <a class="card" href="aliments/chinese-evergreen.html" data-search="chinese evergreen (aglaonema) aglaonema aglaonema aglaonéma" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Aglaonema</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/aloe.html" data-search="aloe vera aloe aloe vera aloès" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌵</div>
+        <div class="card-title">Aloe vera</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/jade-plant.html" data-search="jade plant crassula jade tree baby jade arbre de jade crassula plante de jade arbre à argent" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌵</div>
+        <div class="card-title">Arbre de jade</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/azalea.html" data-search="azalea (rhododendron) rhododendron rosebay azalée (rhododendron) rhododendron" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌺</div>
+        <div class="card-title">Azalée (rhododendron)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/basil.html" data-search="basil sweet basil basilic" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Basilic</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/begonia.html" data-search="begonia begonias bégonia" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌺</div>
+        <div class="card-title">Bégonia</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/christmas-cactus.html" data-search="christmas cactus schlumbergera holiday cactus thanksgiving cactus cactus de noël schlumbergera" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌵</div>
+        <div class="card-title">Cactus de Noël</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/calathea.html" data-search="calathea (prayer plant) prayer plant maranta calathea (plante qui prie) maranta calathéa" data-dog="safe" data-cat="safe">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Calathea (plante qui prie)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/chrysanthemum.html" data-search="chrysanthemum (mum) mum mums daisy chrysanthème chrysanthèmes" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌼</div>
+        <div class="card-title">Chrysanthème</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/sago-palm.html" data-search="sago palm cycas cardboard palm coontie cycas (sagoutier du japon) cycas sagoutier" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌴</div>
+        <div class="card-title">Cycas (sagoutier du Japon)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/cyclamen.html" data-search="cyclamen sowbread cyclamen pain de pourceau" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌸</div>
+        <div class="card-title">Cyclamen</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/dieffenbachia.html" data-search="dieffenbachia (dumb cane) dumb cane dumbcane dieffenbachia canne des muets" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Dieffenbachia</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/dracaena.html" data-search="dracaena (corn plant) corn plant dragon tree dracaena dracaena (dragonnier) dragonnier dracéna" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Dracaena (dragonnier)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/eucalyptus.html" data-search="eucalyptus gum tree eucalyptus" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍃</div>
+        <div class="card-title">Eucalyptus</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/ficus.html" data-search="ficus (weeping fig) weeping fig ficus benjamina indian rubber plant ficus (figuier pleureur) ficus benjamina" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌳</div>
+        <div class="card-title">Ficus (figuier pleureur)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/boston-fern.html" data-search="boston fern sword fern nephrolepis fougère de boston nephrolepis" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Fougère de Boston</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/geranium.html" data-search="geranium (pelargonium) pelargonium geraniums géranium pélargonium" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌺</div>
+        <div class="card-title">Géranium</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/hibiscus.html" data-search="hibiscus (rose of sharon) rose of sharon rose mallow hibiscus (althéa) althéa mauve en arbre" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌺</div>
+        <div class="card-title">Hibiscus (althéa)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/hydrangea.html" data-search="hydrangea hortensia hortensia" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">💐</div>
+        <div class="card-title">Hortensia</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/hyacinth.html" data-search="hyacinth hyacinths hyacinth bulbs jacinthe jacinthes" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪻</div>
+        <div class="card-title">Jacinthe</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/daffodil.html" data-search="daffodil (narcissus) narcissus jonquil paperwhite jonquille (narcisse) narcisse jonquilles" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌼</div>
+        <div class="card-title">Jonquille (narcisse)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/oleander.html" data-search="oleander nerium rose-bay laurier-rose oléandre nérion" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌸</div>
+        <div class="card-title">Laurier-rose</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/lavender.html" data-search="lavender english lavender lavandula lavande lavande vraie" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪻</div>
+        <div class="card-title">Lavande</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/english-ivy.html" data-search="english ivy ivy hedera lierre lierre grimpant hedera" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🍃</div>
+        <div class="card-title">Lierre</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/lily.html" data-search="lily (true lilies, daylilies) easter lily tiger lily daylily stargazer lily lilies lys (lis, hémérocalles) lys de pâques lys tigré hémérocalle lis" data-dog="safe" data-cat="toxic">
+        <div class="emoji">🌸</div>
+        <div class="card-title">Lys (lis, hémérocalles)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/mint-plant.html" data-search="mint (plant) garden mint spearmint peppermint plant menthe (plante) menthe du jardin" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Menthe (plante)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/monstera.html" data-search="monstera (swiss cheese plant) monstera deliciosa split-leaf philodendron monstera (faux philodendron) monstera deliciosa" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Monstera (faux philodendron)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/carnation.html" data-search="carnation pinks sweet william dianthus œillet œillets dianthus" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">💐</div>
+        <div class="card-title">Œillet</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/money-tree.html" data-search="money tree (pachira) pachira guiana chestnut pachira (châtaignier de guyane) pachira money tree" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌳</div>
+        <div class="card-title">Pachira (châtaignier de Guyane)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/areca-palm.html" data-search="areca palm butterfly palm golden cane palm dypsis palmier areca areca dypsis" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌴</div>
+        <div class="card-title">Palmier Areca</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/parlor-palm.html" data-search="parlor palm chamaedorea neanthe bella palm palmier nain (chamaedorea) chamaedorea palmier d’intérieur" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌴</div>
+        <div class="card-title">Palmier nain (chamaedorea)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/philodendron.html" data-search="philodendron heartleaf philodendron sweetheart plant philodendron philodendron grimpant" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Philodendron</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/spider-plant.html" data-search="spider plant chlorophytum airplane plant plante araignée (chlorophytum) phalangère chlorophytum" data-dog="safe" data-cat="safe">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Plante araignée (chlorophytum)</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/poinsettia.html" data-search="poinsettia christmas star euphorbia pulcherrima poinsettia (étoile de noël) étoile de noël" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌺</div>
+        <div class="card-title">Poinsettia (étoile de Noël)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/pothos.html" data-search="pothos (devil’s ivy) golden pothos devil’s ivy epipremnum pothos (lierre du diable) scindapsus epipremnum" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Pothos (lierre du diable)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/rosemary.html" data-search="rosemary romarin" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌿</div>
+        <div class="card-title">Romarin</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/rose.html" data-search="rose roses rose roses rosier" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌹</div>
+        <div class="card-title">Rose</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/snake-plant.html" data-search="snake plant (mother-in-law’s tongue) sansevieria mother-in-law’s tongue sansevière (langue de belle-mère) sansevieria langue de belle-mère" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪴</div>
+        <div class="card-title">Sansevière (langue de belle-mère)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/peace-lily.html" data-search="peace lily spathiphyllum spathiphyllum (fleur de lune) fleur de lune lis de la paix" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪷</div>
+        <div class="card-title">Spathiphyllum (fleur de lune)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/sunflower.html" data-search="sunflower (plant) sunflowers helianthus tournesol tournesols" data-dog="safe" data-cat="safe">
+        <div class="emoji">🌻</div>
+        <div class="card-title">Tournesol</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+<a class="card" href="aliments/tulip.html" data-search="tulip tulips tulip bulbs tulipe tulipes bulbe de tulipe" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🌷</div>
+        <div class="card-title">Tulipe</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/african-violet.html" data-search="african violet saintpaulia violette africaine saintpaulia" data-dog="safe" data-cat="safe">
+        <div class="emoji">🪻</div>
+        <div class="card-title">Violette africaine</div>
+        <div class="badges">
+          <span class="badge badge-safe">🐶 Sans danger</span>
+          <span class="badge badge-safe">🐱 Sans danger</span>
+        </div>
+      </a>
+      </div>
+    </section>
+<section class="group">
+      <h2 class="section-title">À la maison <span style="color:var(--muted);font-weight:600;">7</span></h2>
+      <div class="grid">
+      <a class="card" href="aliments/antifreeze.html" data-search="antifreeze ethylene glycol coolant antigel éthylène glycol liquide de refroidissement" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧪</div>
+        <div class="card-title">Antigel</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/tea-tree-oil.html" data-search="tea tree oil melaleuca oil ti tree oil huile essentielle d’arbre à thé huile de tea tree huile de melaleuca" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🧴</div>
+        <div class="card-title">Huile essentielle d’arbre à thé</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/ibuprofen.html" data-search="ibuprofen and naproxen (nsaids) naproxen advil motrin aleve nsaid ibuprofène et naproxène (ains) ibuprofène naproxène advil nurofen" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">💊</div>
+        <div class="card-title">Ibuprofène et naproxène (AINS)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/rat-poison.html" data-search="rat and mouse poison rat poison mouse bait rodenticide bromethalin mort-aux-rats (raticide) raticide souricide appât" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🪤</div>
+        <div class="card-title">Mort-aux-rats (raticide)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/nicotine.html" data-search="nicotine (cigarettes, vapes, gum) cigarette cigarette butts vape e-liquid nicotine gum nicotine pouch tobacco nicotine (cigarettes, vapoteuses, gommes) cigarette mégots vapoteuse e-liquide gomme à la nicotine tabac" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🚬</div>
+        <div class="card-title">Nicotine (cigarettes, vapoteuses, gommes)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/paracetamol.html" data-search="paracetamol (acetaminophen) acetaminophen tylenol panadol apap paracétamol doliprane efferalgan dafalgan" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">💊</div>
+        <div class="card-title">Paracétamol</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+<a class="card" href="aliments/batteries.html" data-search="batteries (incl. button batteries) battery button battery coin battery lithium battery piles (y compris piles bouton) pile pile bouton pile au lithium" data-dog="toxic" data-cat="toxic">
+        <div class="emoji">🔋</div>
+        <div class="card-title">Piles (y compris piles bouton)</div>
+        <div class="badges">
+          <span class="badge badge-toxic">🐶 Toxique</span>
+          <span class="badge badge-toxic">🐱 Toxique</span>
+        </div>
+      </a>
+      </div>
+    </section>
+
+    <h2 class="section-title">Guides sur les démangeaisons et les allergies</h2>
+    <div class="grid">
+      <a class="card guide-card" href="guides/food-allergy-vs-environmental-allergy.html">
+        <div class="emoji">🤔</div>
+        <div class="card-title">Allergie alimentaire ou environnementale ?</div>
+        <div style="color:var(--muted);font-size:14px;">Les deux font gratter aux mêmes endroits. Seul un régime d’éviction strict permet de les distinguer de façon fiable.</div>
+      </a>
+<a class="card guide-card" href="guides/elimination-diet-for-dogs-and-cats.html">
+        <div class="emoji">🥣</div>
+        <div class="card-title">Comment fonctionne un régime d’éviction</div>
+        <div style="color:var(--muted);font-size:14px;">Huit semaines strictes avec un seul régime, puis les aliments un par un en surveillant les démangeaisons.</div>
+      </a>
+<a class="card guide-card" href="guides/itch-score-0-to-10.html">
+        <div class="emoji">📏</div>
+        <div class="card-title">Noter les démangeaisons de la même façon chaque jour</div>
+        <div style="color:var(--muted);font-size:14px;">Une note régulière de 0 à 10 vaut mieux qu’une note parfaite. La tendance sur plusieurs semaines compte plus qu’une seule journée.</div>
+      </a>
+<a class="card guide-card" href="guides/how-to-read-a-pet-food-label.html">
+        <div class="emoji">🏷️</div>
+        <div class="card-title">Lire une étiquette d’aliment pour animaux</div>
+        <div style="color:var(--muted);font-size:14px;">« Chicken dinner » et « with chicken » désignent des quantités très différentes. Vérifiez chaque protéine de la liste.</div>
+      </a>
+<a class="card guide-card" href="guides/how-to-switch-pet-food.html">
+        <div class="emoji">🍽️</div>
+        <div class="card-title">Changer d’aliment sans dérangement digestif</div>
+        <div style="color:var(--muted);font-size:14px;">Mélangez l’ancien et le nouveau sur 7 à 10 jours, et ralentissez si les selles ramollissent.</div>
+      </a>
+<a class="card guide-card" href="guides/my-pet-ate-something-toxic.html">
+        <div class="emoji">🚨</div>
+        <div class="card-title">Si votre animal a mangé quelque chose de toxique</div>
+        <div style="color:var(--muted);font-size:14px;">Agissez vite, mais ne faites pas vomir votre animal sauf si un vétérinaire vous le demande.</div>
+      </a>
+<a class="card guide-card" href="guides/flea-allergy-dermatitis.html">
+        <div class="emoji">🐾</div>
+        <div class="card-title">Allergie aux puces : une piqûre suffit</div>
+        <div style="color:var(--muted);font-size:14px;">Une allergie à la salive de puce fait gratter même si vous ne voyez jamais de puce. C’est la première chose que les vétérinaires écartent.</div>
+      </a>
+<a class="card guide-card" href="guides/seasonal-allergies-in-dogs.html">
+        <div class="emoji">🌞</div>
+        <div class="card-title">Pollens, acariens et démangeaisons saisonnières</div>
+        <div style="color:var(--muted);font-size:14px;">L’allergie environnementale commence généralement jeune et suit les saisons polliniques. Un score quotidien des démangeaisons montre à votre vétérinaire quand elles augmentent.</div>
+      </a>
+<a class="card guide-card" href="guides/itchy-ears-and-ear-infections.html">
+        <div class="emoji">👂</div>
+        <div class="card-title">Oreilles qui grattent et otites</div>
+        <div style="color:var(--muted);font-size:14px;">Secouer la tête, se gratter et une mauvaise odeur sont des signes fréquents. L’allergie en est souvent la cause, si bien que les oreilles s’enflamment souvent en même temps que la peau.</div>
+      </a>
+<a class="card guide-card" href="guides/filming-itch-for-your-vet.html">
+        <div class="emoji">🎥</div>
+        <div class="card-title">Filmer les démangeaisons pour le vétérinaire</div>
+        <div style="color:var(--muted);font-size:14px;">Les animaux se comportent souvent différemment à la clinique. Une courte vidéo datée tournée à la maison montre ce qu’une description ne peut pas.</div>
+      </a>
+    </div>
+
+    <div class="disclaimer">ⓘ Information éducative, pas un avis vétérinaire.</div>
+    <footer class="footer">
+      <a href="../privacy.html">Confidentialité</a>
+      <a href="../press.html">Kit presse (anglais)</a>
+      <a href="mailto:pawplate.support@gmail.com">pawplate.support@gmail.com</a>
+    </footer>
+  </div>
+  <script>
+    const q = document.getElementById('q');
+    const groups = Array.from(document.querySelectorAll('.group'));
+    const buttons = Array.from(document.querySelectorAll('#filters .chip'));
+    let activeStatus = 'all';
+    function apply() {
+      const term = q.value.trim().toLocaleLowerCase("fr");
+      for (const g of groups) {
+        let shown = 0;
+        for (const c of g.querySelectorAll('.card')) {
+          const matchText = !term || c.dataset.search.includes(term);
+          const matchStatus = activeStatus === 'all' || c.dataset.dog === activeStatus || c.dataset.cat === activeStatus;
+          c.style.display = matchText && matchStatus ? '' : 'none';
+          if (matchText && matchStatus) shown++;
+        }
+        g.style.display = shown ? '' : 'none';
+      }
+    }
+    q.addEventListener('input', apply);
+    for (const b of buttons) {
+      b.addEventListener('click', () => {
+        buttons.forEach((x) => x.classList.remove('active'));
+        b.classList.add('active');
+        activeStatus = b.dataset.status;
+        apply();
+      });
+    }
+  </script>
+</body>
+</html>

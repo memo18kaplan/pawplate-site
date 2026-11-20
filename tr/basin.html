@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PawPlate basın kiti | PawPlate</title>
+  <meta name="description" content="PawPlate, köpek ve kedi sahiplerinin dostlarını neyin kaşındırdığını bulmasına yardım eder. Günde 10 saniyelik kayıt, örüntülere ve veterinerin 30 saniyede okuy" />
+  <link rel="canonical" href="https://memo18kaplan.github.io/pawplate-site/tr/basin.html" />
+  <link rel="alternate" hreflang="en" href="https://memo18kaplan.github.io/pawplate-site/press.html" />
+  <link rel="alternate" hreflang="tr" href="https://memo18kaplan.github.io/pawplate-site/tr/basin.html" />
+  <link rel="alternate" hreflang="x-default" href="https://memo18kaplan.github.io/pawplate-site/press.html" />
+  <meta property="og:title" content="PawPlate basın kiti | PawPlate" />
+  <meta property="og:description" content="PawPlate, köpek ve kedi sahiplerinin dostlarını neyin kaşındırdığını bulmasına yardım eder. Günde 10 saniyelik kayıt, örüntülere ve veterinerin 30 saniyede okuy" />
+  <meta property="og:type" content="website" />
+  <meta name="apple-itunes-app" content="app-id=6827223732" />
+  
+  <style>
+  :root {
+    --bg: #15120F;
+    --bg-top: #1C2D25;
+    --surface: #201E1B;
+    --surface-alt: #2B2926;
+    --border: rgba(255,255,255,0.09);
+    --text: #FFFFFF;
+    --muted: #9C968F;
+    --accent: #F26A2E;
+    --accent-soft: #3A2418;
+    --safe: #5BCB8F;
+    --safe-soft: #1B3326;
+    --caution: #F2B544;
+    --caution-soft: #3A3018;
+    --toxic: #F0506E;
+    --toxic-soft: #3D1D25;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 380px, var(--bg) 100%);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 72px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 12px; flex-wrap: wrap; }
+  .brand { font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -0.6px; display: flex; align-items: center; gap: 8px; }
+  .lang-menu { position: relative; }
+  .lang-menu summary {
+    list-style: none; cursor: pointer; background: var(--surface); border: 1px solid var(--border);
+    padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px;
+  }
+  .lang-menu summary::-webkit-details-marker { display: none; }
+  .lang-list {
+    position: absolute; right: 0; top: calc(100% + 8px); z-index: 10; display: grid; min-width: 160px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 6px;
+  }
+  .lang-list a { color: var(--text); padding: 8px 12px; border-radius: 10px; }
+  .lang-list a:hover { background: var(--surface-alt); text-decoration: none; }
+  .lang-switch { background: var(--surface); border: 1px solid var(--border); padding: 8px 14px; border-radius: 999px; color: var(--text); font-weight: 600; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.12; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 680px; }
+  .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .search {
+    width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--border);
+    background: var(--surface-alt); color: var(--text); font-size: 16px; outline: none;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--surface-alt); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px; color: var(--text);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .emoji { font-size: 38px; line-height: 1; }
+  .card-title { font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
+  .badge-safe { background: var(--safe-soft); color: var(--safe); }
+  .badge-caution { background: var(--caution-soft); color: var(--caution); }
+  .badge-toxic { background: var(--toxic-soft); color: var(--toxic); }
+  .badge-unknown { background: var(--surface-alt); color: var(--muted); }
+  .species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+  .species-box { border-radius: 22px; padding: 20px; text-align: center; }
+  .species-status { font-size: 26px; font-weight: 800; margin-top: 4px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 20px; margin-bottom: 16px; }
+  .panel-label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
+  .emergency { background: var(--toxic-soft); border: 1px solid var(--toxic); color: var(--toxic); font-weight: 600; }
+  .cta-banner {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: 24px;
+    padding: 24px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px; }
+  .app-badge img { display: block; }
+  .store-text { display: inline-block; background: #000; color: #fff; border: 1px solid #A6A6A6; border-radius: 10px; padding: 10px 16px; font-weight: 600; font-size: 15px; }
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: -8px 0 28px; }
+  .section-title { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin: 36px 0 14px; }
+  .guide-card .card-title { font-size: 18px; }
+  .article { max-width: 720px; }
+  .article h2 { font-size: 22px; letter-spacing: -0.3px; margin: 34px 0 8px; }
+  .article p, .article li { color: #E6E1DB; font-size: 17px; }
+  .article p { margin: 0 0 12px; }
+  .article ul { padding-left: 22px; margin: 0 0 12px; }
+  .article li { margin-bottom: 6px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 15px; }
+  .article th, .article td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .article th { color: var(--muted); font-weight: 700; }
+  .table-wrap { overflow-x: auto; }
+  .faq h3 { font-size: 17px; margin: 18px 0 4px; }
+  .sources { color: var(--muted); font-size: 14px; }
+  .sources li { color: var(--muted); font-size: 14px; }
+  .footer { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 28px; font-size: 14px; }
+  .footer a { color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 12px; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; display: block; }
+  .facts th { width: 34%; }
+  .disclaimer {
+    margin-top: 24px; padding: 12px 16px; border-radius: 14px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html">🐾 PawPlate</a>
+      <details class="lang-menu"><summary>🌐 Türkçe</summary><div class="lang-list"><a lang="en" href="../press.html">English</a><a lang="de" href="../de/index.html">Deutsch</a><a lang="es" href="../es/index.html">Español</a><a lang="fr" href="../fr/index.html">Français</a><a lang="it" href="../it/index.html">Italiano</a><a lang="pt" href="../pt/index.html">Português</a><a lang="ru" href="../ru/index.html">Русский</a></div></details>
+    </nav>
+    <article class="article">
+    <img src="../press/pawplate-icon.png" alt="PawPlate" width="96" height="96" style="border-radius:22px;margin-bottom:14px;" />
+    <h1>Basın kiti</h1>
+    <p class="lead">Kaşınan köpek ve kedilerin sahipleri için iPhone günlüğü: günde 10 saniyelik kayıt, adım adım 8 haftalık eliminasyon diyeti ve veteriner için tek sayfalık rapor.</p>
+    <div class="hero-cta"><a class="app-badge" href="https://apps.apple.com/app/id6827223732?pt=129681263&amp;ct=site-press&amp;mt=8"><img src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" alt="App Store&#39;dan indirin" width="150" height="50" onerror="this.replaceWith(Object.assign(document.createElement('span'), { className: 'store-text', textContent: this.alt }))" /></a></div>
+
+    <h2>Kısaca</h2>
+    <p>PawPlate, köpek ve kedi sahiplerinin dostlarını neyin kaşındırdığını bulmasına yardım eder. Günde 10 saniyelik kayıt, örüntülere ve veterinerin 30 saniyede okuyacağı tek sayfalık bir PDF’e dönüşür. 8 haftalık eliminasyon diyetini adım adım yönetir, mama etiketlerinde eski tetikleyicileri işaretler ve 145 yiyecek, bitki ve ev ürününü köpek ve kedi için ayrı ayrı, kaynaklarıyla değerlendirir. Hesap yok, reklam yok, izleme yok.</p>
+
+    <h2>PawPlate hakkında</h2>
+    <p>Veteriner hekimler köpek ve kedilerde gıda alerjisini genelde eliminasyon diyetiyle araştırır: yaklaşık sekiz hafta tek bir mama, ardından eski yiyecekler tek tek geri eklenir. İşin zor yanı kayıt tutmaktır. PawPlate bunu günde 10 saniyelik bir alışkanlığa çevirir: kaşıntı, veterinerlerin kullandığı ölçek örnek alınarak 0–10 arası puanlanır, nerede görüldüğü işaretlenir; kayıt uygulamayı açmadan ana ekran ve kilit ekranı widget’ından ya da Siri ile yapılabilir.</p>
+    <p>Uygulama denemeyi adım adım yönetir; yeniden ekleme süreleri yayımlanmış veteriner araştırmalarına dayanır ve aromalı ilaçlar gibi diyeti bozan gizli kaynakları hatırlatır. Mama paketinin barkodu okutulduğunda daha önce tepki görülen içerikler işaretlenir. Aynı içeriği paylaşan yiyecekler birlikte değerlendirildiği için gizli bir tetikleyici farklı ödüllerde bile görünür. Veteriner raporu tek sayfalık bir özetle başlar. PawPlate teşhis koymaz; sahibin gözlemlerini veterinerin kullanabileceği bir kayda dönüştürür.</p>
+    <p>PawPlate’i Türkiye’den bağımsız geliştirici Mehmet Ali Kaplan geliştirdi. Uygulama Türkçe, İngilizce, Almanca, İspanyolca, Fransızca, İtalyanca, Portekizce ve Rusça olarak sunuluyor.</p>
+
+    <h2>Bilgiler</h2>
+    <div class="table-wrap"><table class="facts"><tbody><tr><th>Ad</th><td>PawPlate: Pet Allergy Journal</td></tr><tr><th>Geliştirici</th><td>Mehmet Ali Kaplan, bağımsız geliştirici, Türkiye</td></tr><tr><th>Platform</th><td>iPhone (App Store)</td></tr><tr><th>Yayın</th><td>Kasım 2026</td></tr><tr><th>Fiyat</th><td>Ücretsiz indirme; yiyecek rehberi ücretsiz. PawPlate Pro aylık ₺199,99 veya yıllık ₺999,99, 3 gün ücretsiz deneme</td></tr><tr><th>Diller</th><td>Türkçe, İngilizce, Almanca, İspanyolca, Fransızca, İtalyanca, Portekizce, Rusça</td></tr><tr><th>Gizlilik</th><td>Hesap yok, reklam yok, izleme yok; günlük telefonda kalır</td></tr></tbody></table></div>
+
+    <h2>Öne çıkanlar</h2>
+    <ul><li>Günde 10 saniyelik kaşıntı kaydı, widget ve Siri ile de</li><li>Adım adım 8 haftalık eliminasyon diyeti ve tek tek yeniden ekleme</li><li>Eski tetikleyicileri ve yaygın alerjenleri işaretleyen barkod okuma</li><li>Aynı içeriği paylaşan yiyecekleri birlikte değerlendiren örüntüler</li><li>Veteriner için tek sayfalık PDF özet ve ardından tüm kayıtlar</li><li>145 yiyecek, bitki ve ev ürünü için köpek ve kediye ayrı, kaynaklı değerlendirme</li></ul>
+
+    <h2>Ekran görüntüleri</h2>
+    <p style="color:var(--muted);font-size:14px;">Tam boyutlu PNG (1206 × 2622) için görüntüye dokunun.</p>
+    <div class="shots">
+      <a href="../press/tr/01-bugun.png"><img src="../press/tr/01-bugun.png" alt="01-bugun" loading="lazy" width="603" height="1311" /></a>
+      <a href="../press/tr/02-analiz.png"><img src="../press/tr/02-analiz.png" alt="02-analiz" loading="lazy" width="603" height="1311" /></a>
+      <a href="../press/tr/03-oruntuler.png"><img src="../press/tr/03-oruntuler.png" alt="03-oruntuler" loading="lazy" width="603" height="1311" /></a>
+      <a href="../press/tr/04-plan.png"><img src="../press/tr/04-plan.png" alt="04-plan" loading="lazy" width="603" height="1311" /></a>
+      <a href="../press/tr/05-yiyecekler.png"><img src="../press/tr/05-yiyecekler.png" alt="05-yiyecekler" loading="lazy" width="603" height="1311" /></a>
+      <a href="../press/tr/06-yiyecek-detay.png"><img src="../press/tr/06-yiyecek-detay.png" alt="06-yiyecek-detay" loading="lazy" width="603" height="1311" /></a>
+      <a href="../press/tr/07-haftalik.png"><img src="../press/tr/07-haftalik.png" alt="07-haftalik" loading="lazy" width="603" height="1311" /></a>
+    </div>
+
+    <h2>Uygulama simgesi</h2>
+    <p><a href="../press/pawplate-icon.png" download>Simgeyi indirin (PNG, 1024 × 1024)</a></p>
+
+    <h2>Bağlantılar ve iletişim</h2>
+    <ul>
+      <li>App Store: <a href="https://apps.apple.com/app/id6827223732?pt=129681263&amp;ct=site-press&amp;mt=8">apps.apple.com/app/id6827223732</a></li>
+      <li>Web sitesi: <a href="index.html">memo18kaplan.github.io/pawplate-site/tr/</a></li>
+      <li>İletişim: <a href="mailto:pawplate.support@gmail.com">pawplate.support@gmail.com</a></li>
+    </ul>
+    </article>
+  </div>
+</body>
+</html>
